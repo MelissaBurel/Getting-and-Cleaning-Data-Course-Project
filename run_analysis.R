@@ -66,4 +66,4 @@ all_data4<-aggregate(. ~subject + activity, all_data3, mean)
 all_data4<-all_data4[order(all_data4$subject,all_data4$activity),]
 
 #write the new data set
-write.table(all_data4, file = "tidydata.txt",row.name=TRUE)
+write.table(all_data4, file = "tidydata.txt",row.name=FALSE)
